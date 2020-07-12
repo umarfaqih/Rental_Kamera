@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Metadata. -->
+    <string name="app_name">Rental Kamera</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_rent">Rent</string>
+
+
+    <!-- Common. -->
+    <string name="form_empty">This field is required</string>
+
+
+    <!-- Authentication. -->
+    <string name="login_prompt">Login</string>
+    <string name="register_prompt">Register</string>
+
+    <string name="onboard_title">Need camera in a pinch?</string>
+    <string name="onboard_prompt">Checkout our collection for rent!</string>
+
+    <string name="address_hint">Address</string>
+
+    <string name="button_login">Login</string>
+    <string name="button_log_out">Log out</string>
+    <string name="button_register">Register</string>
+
+    <string name="email_exist">Email exist</string>
+    <string name="email_hint">Email</string>
+    <string name="email_invalid">Invalid Email</string>
+
+    <string name="login_title">Log into Camera Rental</string>
+    <string name="login_email_invalid">Incorrect Email</string>
+    <string name="login_password_invalid">Incorrect password</string>
+
+    <string name="name_invalid">Invalid name</string>
+
+    <string name="password_hint">Password</string>
+    <string name="password_confirm_hint">Confirm Password</string>
+    <string name="password_not_matched">Password not matched</string>
+    <string name="password_weak">Password too weak</string>
+
+    <string name="phone_hint">Phone number</string>
+
+    <string name="register_title">Create an account</string>
+    <string name="register_name_hint">Full name</string>
+
+
+    <!-- Main Module. -->
+    <string name="rent">Rent</string>
+    <string name="rent_manufacturer_hint">Manufacturer</string>
+    <string name="rent_type_hint">Type</string>
+    <string name="rent_model_hint">Model</string>
+    <string name="rent_location_hint">Location</string>
+    <string name="rent_price_hint">Price per day</string>
+
+
+    <!-- Image Descriptions. -->
+    <string name="onboard_image_description">Person holding camera</string>
+    <string name="profile_image_description">Profile picture</string>
+    <string name="rent_image_description">Camera image</string>
+</resources>

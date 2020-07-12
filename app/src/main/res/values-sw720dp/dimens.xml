@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rent_card_image_size">300dp</dimen>
+    <dimen name="rent_card_text_size">16sp</dimen>
+    <dimen name="rent_detail_image_size">400dp</dimen>
+</resources>

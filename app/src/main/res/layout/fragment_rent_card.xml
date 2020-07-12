@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        
+        <variable
+            name="cameraModel"
+            type="id.ac.esaunggul.rentalkamera.data.model.CameraModel" />
+    </data>
+    
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/rent_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_margin"
+        app:cardElevation="@dimen/card_elevation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rent_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/rent_card_image"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/rent_card_image_size"
+                android:contentDescription="@string/rent_image_description"
+                android:scaleType="centerCrop"
+                app:imageUrl="@{cameraModel.imageUrl}"
+                app:layout_constraintBottom_toTopOf="@id/rent_card_camera_model_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/rent_card_camera_model_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/card_margin"
+                android:layout_marginStart="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:text="@{cameraModel.model}"
+                android:textSize="@dimen/rent_card_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rent_card_image"
+                tools:text="Camera" />
+
+            <TextView
+                android:id="@+id/rent_card_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/rent_card_text_price_margin"
+                android:layout_marginStart="@dimen/card_margin"
+                android:layout_marginLeft="@dimen/card_margin"
+                android:text="@{`Rp` + Long.toString(cameraModel.price)}"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="@dimen/rent_card_text_size"
+                
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rent_card_camera_model_text"
+                tools:text="Price" />
+
+            <TextView
+                android:id="@+id/rent_card_place_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin"
+                android:text="Jakarta"
+                android:textSize="@dimen/rent_card_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rent_card_price_text"
+                tools:text="Location" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

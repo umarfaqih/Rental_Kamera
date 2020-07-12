@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Metadata -->
+    <string name="app_name">Rental Kamera</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="menu_profile">Profil</string>
+    <string name="menu_rent">Sewa</string>
+
+
+    <!-- Common. -->
+    <string name="form_empty">Bagian ini wajib diisi</string>
+
+
+    <!-- Authentication -->
+    <string name="login_prompt">Masuk</string>
+    <string name="register_prompt">Daftar</string>
+
+    <string name="onboard_title">Bingung sewa kamera?</string>
+    <string name="onboard_prompt">Yuk cek di sini!</string>
+
+    <string name="address_hint">Alamat</string>
+
+    <string name="button_login">Masuk</string>
+    <string name="button_log_out">Keluar</string>
+    <string name="button_register">Registrasi</string>
+
+    <string name="email_exist">Email telah terdaftar</string>
+    <string name="email_hint">Email</string>
+    <string name="email_invalid">Email tidak valid</string>
+
+    <string name="login_title">Masuk ke Rental Kamera</string>
+    <string name="login_email_invalid">Email kurang tepat</string>
+    <string name="login_password_invalid">Password kurang tepat</string>
+
+    <string name="name_invalid">Nama tidak valid</string>
+
+    <string name="password_hint">Password</string>
+    <string name="password_confirm_hint">Konfirmasi Password</string>
+    <string name="password_not_matched">Password tidak cocok</string>
+    <string name="password_weak">Password terlalu lemah</string>
+
+    <string name="phone_hint">Nomor telepon</string>
+
+    <string name="register_title">Buat sebuah akun</string>
+    <string name="register_name_hint">Nama Lengkap</string>
+
+
+    <!-- Main Module -->
+    <string name="rent">Sewa</string>
+    <string name="rent_manufacturer_hint">Pembuat</string>
+    <string name="rent_type_hint">Tipe</string>
+    <string name="rent_model_hint">Model</string>
+    <string name="rent_location_hint">Lokasi</string>
+    <string name="rent_price_hint">Harga per hari</string>
+
+
+    <!-- Image Descriptions. -->
+    <string name="onboard_image_description">Seseorang memegang kamera</string>
+    <string name="profile_image_description">Gambar profil</string>
+    <string name="rent_image_description">Gambar kamera</string>
+</resources>

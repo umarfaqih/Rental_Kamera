@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.main.admin.diagnosis.DiagnosisDetailFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/rent_detail_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin"
+            app:cardElevation="@dimen/card_elevation">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rent_detail_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/rent_detail_image"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/rent_detail_image_size"
+                    android:contentDescription="@string/rent_image_description"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+                <TextView
+                    android:id="@+id/rent_detail_manufacturer_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/view_margin"
+                    android:text="@string/rent_manufacturer_hint"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rent_detail_image" />
+
+                <TextView
+                    android:id="@+id/rent_detail_manufacturer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_margin"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:layout_marginTop="@dimen/text_inbetween_margin"
+                    android:textIsSelectable="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rent_detail_manufacturer_hint"
+                    tools:text="Sony" />
+
+                <View
+                    android:id="@+id/rent_detail_first_divider"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/view_margin"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rent_detail_manufacturer" />
+
+                <TextView
+                    android:id="@+id/rent_detail_type_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/view_margin"
+                    android:text="@string/rent_type_hint"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rent_detail_first_divider" />
+
+                <TextView
+                    android:id="@+id/rent_detail_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_margin"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:layout_marginTop="@dimen/text_inbetween_margin"
+                    android:textIsSelectable="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rent_detail_type_hint"
+                    tools:text="DSLR" />
+
+                <View
+                    android:id="@+id/rent_detail_second_divider"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/view_margin"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rent_detail_type" />
+
+                <TextView
+                    android:id="@+id/rent_detail_model_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/view_margin"
+                    android:text="@string/rent_model_hint"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rent_detail_second_divider" />
+
+                <TextView
+                    android:id="@+id/rent_model_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_margin"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:layout_marginTop="@dimen/text_inbetween_margin"
+                    android:textIsSelectable="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rent_detail_model_hint"
+                    tools:text="α77" />
+
+                <View
+                    android:id="@+id/rent_detail_third_divider"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/view_margin"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rent_model_history" />
+
+                <TextView
+                    android:id="@+id/rent_detail_location_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/view_margin"
+                    android:text="@string/rent_location_hint"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rent_detail_third_divider" />
+
+                <TextView
+                    android:id="@+id/rent_detail_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_margin"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:layout_marginTop="@dimen/text_inbetween_margin"
+                    android:textIsSelectable="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rent_detail_location_hint"
+                    tools:text="Jakarta" />
+
+                <View
+                    android:id="@+id/rent_detail_fourth_divider"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/view_margin"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rent_detail_location" />
+
+                <TextView
+                    android:id="@+id/rent_detail_price_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/view_margin"
+                    android:text="@string/rent_price_hint"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rent_detail_fourth_divider" />
+
+                <TextView
+                    android:id="@+id/rent_detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_margin"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:layout_marginTop="@dimen/text_inbetween_margin"
+                    android:textColor="?attr/colorPrimary"
+                    android:textIsSelectable="true"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rent_detail_price_hint"
+                    tools:text="Rp350.000" />
+
+                <View
+                    android:id="@+id/rent_detail_fifth_divider"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/view_margin"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rent_detail_price" />
+
+                <Button
+                    android:id="@+id/rent_detail_rent_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/view_margin"
+                    android:text="@string/rent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rent_detail_fifth_divider" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.core.widget.NestedScrollView>
+</layout>
